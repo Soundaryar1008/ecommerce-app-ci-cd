@@ -6,11 +6,11 @@ import io
 
 def test_orders_dataframe():
     sample_orders = [
-        "2025-02-20, Order ID: 1001, Customer: Vishnu, Product: Laptop, Price: 75000, Status: Delivered",
-        "2025-02-21, Order ID: 1002, Customer: Arjun, Product: Smartphone, Price: 45000, Status: Shipped",
-        "2025-02-22, Order ID: 1003, Customer: Rahul, Product: Headphones, Price: 3000, Status: Processing",
+        "2025-02-20, Order ID: 1001, Customer: Seema, Product: Laptop, Price: 75000, Status: Delivered",
+        "2025-02-21, Order ID: 1002, Customer: Sangeetha, Product: Smartphone, Price: 45000, Status: Shipped",
+        "2025-02-22, Order ID: 1003, Customer: Keerthi, Product: Headphones, Price: 3000, Status: Processing",
         "2025-02-23, Order ID: 1004, Customer: Kiran, Product: Smartwatch, Price: 12000, Status: Delivered",
-        "2025-02-24, Order ID: 1005, Customer: Priya, Product: Gaming Console, Price: 55000, Status: Cancelled"
+        "2025-02-24, Order ID: 1005, Customer: Priyavanshi, Product: Gaming Console, Price: 55000, Status: Cancelled"
     ]
 
     result = create_orders_dataframe(sample_orders)
@@ -21,7 +21,7 @@ def test_orders_dataframe():
 
 def test_products_dataframe():
     sample_products = {
-        "store": "TechBazaar",
+        "store": "TechMart",
         "category": "Electronics",
         "products": [
             {
